@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Chaveamentos</title>
+    <link rel="stylesheet" href="./chaveamento.css">
+</head>
+<body>
+
+    <h1>Controle e criação de torneios de Futebol ⚽</h1>
+
+    <div class="novo-torneio">
+        <input type="text" id="nomeTorneio" placeholder="Nome do Torneio">
+        <button onclick="criarTorneio()">Criar Torneio</button>
+    </div>
+
+    <div class="conteiner">
+        <!-- Lista de campeonatos à esquerda -->
+        <div class="lista-torneios">
+            <h2>Campeonatos</h2>
+            <div id="torneios-container">
+                <!-- Os torneios serão criados dinamicamente aqui -->
+            </div>
+        </div>
+
+        <!-- Chaveamento do torneio selecionado à direita -->
+        <div class="chaveamento-container" id="chaveamento-container">
+            <h2>Chaveamento</h2>
+            <div id="chaveamento-display">
+                <!-- O chaveamento será exibido aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./chaveamento.js"></script>
+</body>
+</html>
